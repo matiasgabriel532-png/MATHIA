@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Aye</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f5f5f5;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 520px;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(255, 0, 80, 0.25);
+      animation: fadeIn 2.5s ease;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      color: #ff5f7e;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      opacity: 0;
+      animation: textAppear 1.5s ease forwards;
+    }
+
+    p:nth-child(2) { animation-delay: 0.5s; }
+    p:nth-child(3) { animation-delay: 1.2s; }
+    p:nth-child(4) { animation-delay: 2s; }
+    p:nth-child(5) { animation-delay: 2.8s; }
+    p:nth-child(6) { animation-delay: 3.6s; }
+
+    .firma {
+      text-align: right;
+      margin-top: 30px;
+      font-style: italic;
+      color: #ff9aa8;
+      opacity: 0;
+      animation: textAppear 1.5s ease forwards;
+      animation-delay: 4.4s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes textAppear {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Aye</h1>
+
+    <p>
+      No sé en qué momento exacto pasó,  
+      pero lo sé con certeza:  
+      empezaste a importarme más de lo que esperaba.
+    </p>
+
+    <p>
+      Me importa cómo sos,  
+      cómo sentís,  
+      cómo estás cuando bajás la guardia  
+      y simplemente sos vos.
+    </p>
+
+    <p>
+      Lo que siento no es apuro,  
+      no es promesa vacía,  
+      no es idealizar.
+    </p>
+
+    <p>
+      Es el deseo sincero de construir algo real,  
+      con respeto, con cuidado,  
+      con amor del que se elige todos los días.
+    </p>
+
+    <p>
+      Me gustaría un futuro con vos,  
+      sin presiones,  
+      sin máscaras,  
+      caminando de la mano si así lo sentimos los dos.
+    </p>
+
+    <p>
+      Esto no es para impresionarte.  
+      Es para que sepas  
+      que lo que siento es verdadero.
+    </p>
+
+    <div class="firma">
+      — Mati
+    </div>
+  </div>
+
+</body>
+</html>
